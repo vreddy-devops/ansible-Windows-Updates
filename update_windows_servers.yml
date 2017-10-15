@@ -1,0 +1,8 @@
+---
+- name: windows updates
+  hosts: windows
+  roles:
+    - role: win_updates
+      win_updates_category_names:
+         - "CriticalUpdates"
+         - "SecurityUpdates"
