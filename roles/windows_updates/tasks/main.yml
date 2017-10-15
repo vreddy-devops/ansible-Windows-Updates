@@ -1,0 +1,20 @@
+---
+- block:
+    – name: Check for missing updates.
+      win_updates:
+        state: searched
+      register: update_count
+
+# Install missing updates and reboot the server when required
+- block:
+    - name: Install missing updates
+      win_updates:
+        category_names: "{{ win_updates_category_names }}"
+      register: update_result
+
+    - name: Reboot the server when required
+      win_reboot:
+        shutdown_timeout_sec: 3000
+        reboot_timeout_sec: 3000
+      when: update_result.reboot_required
+  when: update_count.found_update_count|int >= 1
