@@ -2,7 +2,7 @@
 
 ## Dependencies
 * Assumes Ansible is installed on the linux machine
-* Assumes Ansible can reach Windows host machines on the winrm port configured
+* Assumes Ansible can reach Windows host machines on the configured winrm port 
 * Assumes windows machines have network access to get updates downloaded
 
 ## Configure Anbile for Windows 
