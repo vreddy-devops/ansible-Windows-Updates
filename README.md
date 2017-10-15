@@ -1,4 +1,4 @@
-# ansible-Windows-Updates
+# Ansible-Windows-Updates
 
 ## Dependencies
 * Assumes Ansible is installed on the linux machine
