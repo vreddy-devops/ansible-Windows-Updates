@@ -6,10 +6,10 @@
 * Assumes windows machines have network access to get updates downloaded
 
 ## Configure Anbile for Windows 
-[Manage Ansible with windows](https://github.com/vinod-reddy/ansible-Windows-Updates/wiki/Manage-Windows-with-Ansble---Configuration)
+[Manage Ansible with windows](https://github.com/vreddy-devops/ansible-Windows-Updates/wiki/Manage-Windows-with-Ansble---Configuration)
 
 ## Variables
-[win_updates](https://github.com/vinod-reddy/ansible-Windows-Updates/tree/master/roles/win_updates) role installs the updates provided by the [win_updates](http://docs.ansible.com/ansible/latest/win_updates_module.html) module. 
+[win_updates](https://github.com/vreddy-devops/ansible-Windows-Updates/tree/master/roles/win_updates) role installs the updates provided by the [win_updates](http://docs.ansible.com/ansible/latest/win_updates_module.html) module. 
 
 ## Playbook
 ```
